@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Order Date -->
+        <TextView
+            android:id="@+id/orderDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Date: 2024-12-21"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Package Details -->
+        <TextView
+            android:id="@+id/packageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price: 10000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif" />
+
+        <!-- Review -->
+        <TextView
+            android:id="@+id/reviewTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review: Great service!"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            />
+        <RatingBar
+            android:id="@+id/ratingBarCaterer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="4.0"
+            android:isIndicator="true" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

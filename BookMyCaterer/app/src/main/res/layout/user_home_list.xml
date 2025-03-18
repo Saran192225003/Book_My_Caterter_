@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Caterer Image -->
+    <ImageView
+        android:id="@+id/ivCatererImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_6" />
+
+    <!-- Overlay for Name and Reviews -->
+    <LinearLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ivCatererImage"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Caterer Name -->
+        <TextView
+            android:id="@+id/tvCatererName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Catering Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:paddingBottom="4dp" />
+
+        <!-- Rating Bar -->
+        <RatingBar
+            android:id="@+id/ratingBarCaterer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="4.0"
+            android:visibility="invisible"
+            android:isIndicator="true"
+            android:layout_gravity="start"
+           />
+    </LinearLayout>
+</RelativeLayout>

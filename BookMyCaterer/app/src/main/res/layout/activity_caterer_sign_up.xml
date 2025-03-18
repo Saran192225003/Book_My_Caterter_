@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#2A6B93"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/headerTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Book My Caterer"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Name Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Name"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:paddingStart="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your full name"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="16dp"/>
+
+        <!-- Catering Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Catering Name"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextCateringName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter catering business name"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="16dp"/>
+
+        <!-- Contact Number -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Number"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter contact number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="16dp"/>
+
+        <!-- Business Size -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Business Size"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextBusinessSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter business size (e.g., large, small, medium)"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="16dp"/>
+
+        <!-- City -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter city name"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="16dp"/>
+
+        <!-- Upload FSSAI License -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Upload FSSAI License"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageViewLicense"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_upload"
+                android:contentDescription="License Preview"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonUploadLicense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload License"
+            android:backgroundTint="#2A6B93"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/buttonSubmitVerification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send for Verification"
+            android:backgroundTint="#2A6B93"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp"
+            android:padding="16dp"/>
+
+        <!-- Login Redirect -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Login"
+                android:textSize="14sp"
+                android:textColor="#4CAF50"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

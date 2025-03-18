@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#2A6B93"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Book My Caterer"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!-- Package Name -->
+    <TextView
+        android:id="@+id/tvPackageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Package Name"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:gravity="center" />
+
+    <!-- RecyclerView for Menu Items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMenuItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        tools:listitem="@layout/package_covered_list"/>
+
+    <!-- Select Button -->
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2A6B93"
+        android:layout_marginBottom="30dp"/>
+</LinearLayout>

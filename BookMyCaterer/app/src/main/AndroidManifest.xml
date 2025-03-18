@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BookMyCaterer"
+        tools:targetApi="31">
+        <activity
+            android:name=".user.UserOrdersTab"
+            android:exported="false" />
+        <activity
+            android:name=".user.MenusCoveredPackage"
+            android:exported="false" />
+        <activity
+            android:name=".caterer.CatererOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ViewVerifications"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpAs"
+            android:exported="false" />
+        <activity
+            android:name=".caterer.Verifying"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminProfile"
+            android:exported="false" />
+        <activity
+            android:name=".user.Review"
+            android:exported="false" />
+        <activity
+            android:name=".user.Payment"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserLogin"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserOrders"
+            android:exported="false" />
+        <activity
+            android:name=".user.SelectDate"
+            android:exported="false" />
+        <activity
+            android:name=".caterer.CatererHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ViewProfile"
+            android:exported="false" />
+        <activity
+            android:name=".caterer.CatererProfile"
+            android:exported="false" />
+        <activity
+            android:name=".admin.VerifyCaterer"
+            android:exported="false" />
+        <activity
+            android:name=".caterer.UpdatePackage"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminCatererView"
+            android:exported="true" />
+        <activity
+            android:name=".caterer.AddNewPackage"
+            android:exported="false" />
+        <activity
+            android:name=".caterer.AcceptedOrders"
+            android:exported="true" />
+        <activity
+            android:name=".caterer.CatererOrder"
+            android:exported="false" />
+        <activity
+            android:name=".caterer.Packages"
+            android:exported="false" />
+        <activity
+            android:name=".caterer.UploadLicense"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminHome"
+            android:exported="false" />
+        <activity
+            android:name=".caterer.CatererLoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".caterer.Menu"
+            android:exported="false" />
+        <activity
+            android:name=".caterer.CatererAvailability"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserHome"
+            android:exported="true" />
+        <activity
+            android:name=".caterer.EditPrice"
+            android:exported="false" />
+        <activity
+            android:name=".caterer.AddMenu"
+            android:exported="false" />
+        <activity
+            android:name=".caterer.CatererSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".caterer.CatererSetPassword"
+            android:exported="false" />
+
+
+        <activity android:name="com.razorpay.CheckoutActivity" />
+    </application>
+
+</manifest>

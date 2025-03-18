@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:elevation="4dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <!-- Horizontal layout for Order Details -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:weightSum="2"
+android:paddingBottom="8dp">
+
+<!-- Left Column -->
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:paddingEnd="8dp">
+
+    <TextView
+        android:id="@+id/eventType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Type: Wedding"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: 2024-12-25"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location: Downtown Hall"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"/>
+</LinearLayout>
+
+<!-- Right Column -->
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:paddingStart="8dp">
+
+    <TextView
+        android:id="@+id/noOfHeads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. of Heads: 150"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Time Slot -->
+    <TextView
+        android:id="@+id/timeSlot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Slot: Dinner"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Estimated Amount: $2000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+</LinearLayout>
+</LinearLayout>
+
+    <!-- Selected Package -->
+<TextView
+android:id="@+id/selectedPackage"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Selected Package: Premium"
+android:textSize="14sp"
+android:layout_marginBottom="4dp"/>
+
+    <!-- Customized Menu -->
+<TextView
+android:id="@+id/customizedMenu"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Customized Menu: Salad, Pasta, Grilled Chicken"
+android:textSize="14sp"
+android:layout_marginBottom="4dp"/>
+
+    <!-- Accept and Reject Buttons -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:gravity="center"
+android:layout_marginTop="8dp">
+
+<!-- Accept Button -->
+<Button
+    android:id="@+id/acceptButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Accept"
+    android:textColor="#FFFFFF"
+android:layout_marginEnd="8dp"
+    android:backgroundTint="#4CAF50" />
+<!-- Reject Button -->
+<Button
+    android:id="@+id/rejectButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Reject"
+    android:textColor="#FFFFFF"
+android:backgroundTint="#FF5252" />
+</LinearLayout>
+
+    </LinearLayout>
